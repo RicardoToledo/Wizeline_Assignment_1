@@ -1,0 +1,17 @@
+{
+  "name": "assessment_session1",
+  "version": "1.0.0",
+  "description": "Assessment session 1 - Challenge Exeercise 1 in QA Automation Certification course",
+  "main": "index.js",
+  "scripts": {
+    "test-all-multiple-browsers": "testcafe -c 1 safari,chrome,firefox ./page_model/tests --reporter html:./report.html",
+    "test-all-chrome-concurrency3": "testcafe -c 3 chrome ./page_model/tests --reporter html:./report.html",
+    "test-all-firefox": "testcafe firefox ./page_model/tests"
+  },
+  "author": "Ricardo Toledo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
